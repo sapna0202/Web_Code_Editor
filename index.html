@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <!-- Include the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include the Material Icons font from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <main class="container">
+        <!-- Code Editor Section -->
+        <section class="Editor">
+            <!-- HTML Editor -->
+            <div class="Editor_Html Editor_flex">
+                <header>
+                    <label>
+                        <i class="material-icons">computer</i>
+                        <h6>HTML</h6>
+                    </label>
+                    <div class="Btn">
+                        <!-- Lock and Copy buttons for the HTML editor -->
+                        <button id="Editor_Html_header_Lockbtn">Lock</button>
+                        <button id="Editor_Html_header_Copybtn">Copy</button>
+                    </div>
+                </header>
+                <!-- Textarea for entering HTML code -->
+                <textarea spellcheck="false" id="Editor_Html_Code" ></textarea>
+            </div>
+            <!-- CSS Editor -->
+            <div class="Editor_Css Editor_flex">
+                <header>
+                    <label>
+                        <i class="material-icons">computer</i>
+                        <h6>CSS</h6>
+                    </label>
+                    <div class="Btn">
+                        <!-- Lock and Copy buttons for the CSS editor -->
+                        <button id="Editor_Css_header_Lockbtn">Lock</button>
+                        <button id="Editor_Css_header_Copybtn">Copy</button>
+                    </div>
+                </header>
+                <!-- Textarea for entering CSS code -->
+                <textarea spellcheck="false" id="Editor_Css_Code" ></textarea>
+            </div>
+            <!-- JavaScript Editor -->
+            <div class="Editor_Js Editor_flex">
+                <header>
+                    <label>
+                        <i class="material-icons">computer</i>
+                        <h6>JS</h6>
+                    </label>
+                    <div class="Btn">
+                        <!-- Lock and Copy buttons for the JavaScript editor -->
+                        <button id="Editor_Js_header_Lockbtn">Lock</button>
+                        <button id="Editor_Js_header_Copybtn">Copy</button>
+                    </div>
+                </header>
+                <!-- Textarea for entering JavaScript code -->
+                <textarea spellcheck="false" id="Editor_Js_Code" ></textarea>
+            </div>
+        </section>
+        <!-- Output Section -->
+        <footer class="output">
+            <!-- Button to run the code -->
+            <button id="output_runButton">Run</button>
+            <!-- Output frame where the code will be displayed when executed -->
+            <iframe id="output_frame"></iframe>
+        </footer>
+    </main>
+    <!-- Include the JavaScript functionality for the code editor -->
+    <script src="functionality.js"></script>
+</body>
+</html>

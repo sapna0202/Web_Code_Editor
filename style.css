@@ -1,0 +1,132 @@
+/* Reset default margin, padding, font, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling for the overall page body */
+body {
+    background-color: #696d6d;
+    color: #fff;
+}
+
+/* Styling for the main container of the code editor */
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+/* Styling for the editor section */
+section.Editor {
+    width: 100%;
+    max-width: 1400px;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+/* Common styling for all editor flex sections */
+section.Editor .Editor_flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+/* Styling for the header of editor flex sections */
+section.Editor .Editor_flex header {
+    background-color: #272727;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Styling for buttons within the editor headers */
+section.Editor .Editor_flex header .Btn button {
+    padding: 9px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    background-color: #256c77;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 900;
+}
+
+/* Styling for the code editor textareas */
+section.Editor .Editor_flex textarea {
+    width: 100%;
+    height: 60vh;
+    background-color: #272727;
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+}
+
+/* Styling for the labels in the editor flex sections */
+section.Editor .Editor_flex label {
+    padding-left: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+/* Styling for the 'h6' element inside the labels */
+section.Editor .Editor_flex label h6 {
+    font-weight: 900;
+}
+
+/* Styling for the output section at the bottom of the page */
+footer.output {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the 'Run' button in the output section */
+footer.output #output_runButton {
+    padding: 0.4rem;
+    background-color: #256c77;
+    color: #fff;
+    font-weight: 900;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* Styling for the output iframe element */
+footer.output iframe {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Media query for medium-sized screens (max-width: 780px) */
+@media (max-width: 780px) {
+    .Editor {
+        flex-direction: column; /* Stack the sections vertically on medium screens */
+        flex-wrap: wrap;
+    }
+
+    footer.output {
+        order: -1; /* Move the output section to the top so it appears at the bottom visually */
+    }
+}
