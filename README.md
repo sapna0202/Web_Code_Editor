@@ -22,8 +22,16 @@ this editor also allows you to write and execute HTML, CSS, and JavaScript code 
    
 
 1.Open the index.html file in your web browser.
-
 2.Start coding!
 
+Usage
+
+Edit code in the HTML, CSS, and JavaScript editors.
+Click the "Run" button to see the live output.
+
+Acknowledgments
+Icons from Google Icons
+
+If you have any questions or suggestions, feel free to contact us at sapnaasingh0909@gmail.com.
 
 
